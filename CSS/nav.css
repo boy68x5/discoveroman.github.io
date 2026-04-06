@@ -1,0 +1,44 @@
+.navbar {
+    background: #1a1a1a;
+     font-family: calibri;
+      padding-right: 15px;
+      padding-left: 15px;
+      padding-bottom: 20px;
+      background-size: cover;
+}
+.navbarspace { 
+     display: flex;
+             display: inline-block;
+			color: #fff;
+             font-size: 18px;
+              font-weight: bold;
+               margin-right: 25px;
+               letter-spacing: 2px;        
+}
+.logo {
+font-size: 35px;
+ font-weight: 600;
+  color: #fff;
+}
+
+.navbarspace a {     /* space between words in the nav bar */
+    margin-right: 30px;
+}
+
+
+/* both of these should be applied to get transition hovers !!!*/
+.navbarspace a {
+    transition: 0.5s; /* this is the speed of the transition for the hover effect*/
+}
+.navbarspace a:hover {
+    color: #ffffff;
+    font-size: 120%;
+}
+
+.logo{
+    transition: 0.5s;
+}
+.logo:hover {
+    color: #ffffff;
+    font-size: 250%;
+}

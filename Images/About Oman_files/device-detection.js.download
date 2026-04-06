@@ -1,0 +1,48 @@
+(function () {
+    var cookieName = 'EO.DeviceClass';
+    var mobileBreakpoint = 768; //  mobile breakpoint
+
+    function determineDeviceClass() {
+        var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+        if (!width) {
+            return 'desktop';
+        }
+        return width <= mobileBreakpoint ? 'mobile' : 'desktop';
+    }
+
+    function setCookie(value) {
+        try {
+            var expires = new Date();
+            expires.setFullYear(expires.getFullYear() + 1);
+            var cookie = cookieName + '=' + encodeURIComponent(value) +
+                '; path=/' +
+                '; expires=' + expires.toUTCString() +
+                '; SameSite=Lax';
+
+            if (window.location.protocol === 'https:') {
+                cookie += '; Secure';
+            }
+
+            document.cookie = cookie;
+        } catch (e) {
+            
+        }
+    }
+
+    function updateDeviceCookie() {
+        var deviceClass = determineDeviceClass();
+        setCookie(deviceClass);
+    }
+
+    // on first load
+    updateDeviceCookie();
+
+    // on resize
+    var resizeTimeout;
+    window.addEventListener('resize', function () {
+        if (resizeTimeout) {
+            clearTimeout(resizeTimeout);
+        }
+        resizeTimeout = setTimeout(updateDeviceCookie, 250);
+    });
+})();
