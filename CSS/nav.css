@@ -19,6 +19,8 @@
 font-size: 35px;
  font-weight: 600;
   color: #fff;
+  padding: 10px;
+  
 }
 
 .navbarspace a {     /* space between words in the nav bar */
