@@ -1,10 +1,12 @@
+
 .navbar {
-    background: #1a1a1a;
-     font-family: calibri;
+    background: #2980b9;
+    font-family: boldnose, sans-serif;
       padding-right: 15px;
       padding-left: 15px;
       padding-bottom: 20px;
       background-size: cover;
+      font-weight: 400;
 }
 .navbarspace { 
      display: flex;

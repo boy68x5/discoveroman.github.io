@@ -15,6 +15,13 @@
     <link rel="icon" type="image/png" href="Images/visitomanprojest-removebg-preview.png">
     <link rel="stylesheet" href="CSS/nav.css">
     <link rel="stylesheet" href="CSS/footer.css">
+    <link rel="stylesheet" href="CSS/booking.css">
+
+    <!-- Fonts  -->
+     
+    <link href="https://fonts.googleapis.com/css2?family=Boldonse&display=swap" rel="stylesheet">
+
+    <!-- Fonts -->
 
     <style>
         * {text-decoration: none;
@@ -30,98 +37,11 @@
         body {
                  margin: 0;
                 padding: 0; 
+                background-image: url(Images/scale.jpg) ;
+            
             }
 
-        .booking-section {
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 80vh;
-            padding: 60px 20px;
-            overflow: hidden;
-        }
-
-        .booking-section::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: url('Images/scale.jpg') center/cover no-repeat;
-            filter: blur(6px);
-            z-index: 0;
-            transform: scale(1.05);
-        }
-
-        .booking-section > * {
-            position: relative;
-            z-index: 1;
-        }
-
-        .booking-form {
-            background: #fff;
-            border-radius: 12px;
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
-            padding: 40px 36px;
-            max-width: 480px;
-            width: 100%;
-        }
-
-        .booking-form h2 {
-            text-align: center;
-            margin-bottom: 28px;
-            font-size: 26px;
-            color: #2c3e50;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        .booking-form label {
-            display: block;
-            margin-bottom: 6px;
-            font-weight: 600;
-            color: #34495e;
-            font-size: 14px;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        .booking-form input,
-        .booking-form select {
-            width: 100%;
-            padding: 10px 14px;
-            margin-bottom: 20px;
-            border: 1px solid #dcdde1;
-            border-radius: 8px;
-            font-size: 15px;
-            box-sizing: border-box;
-            transition: border-color 0.3s;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        .booking-form input:focus,
-        .booking-form select:focus {
-            outline: none;
-            border-color: #2980b9;
-        }
-
-        .booking-form button {
-            width: 100%;
-            padding: 12px;
-            background-color: #2980b9;
-            color: #fff;
-            border: none;
-            border-radius: 8px;
-            font-size: 16px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: background-color 0.3s;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        .booking-form button:hover {
-            background-color: #1a6fa0;
-        }
+       
 
 
     </style>
@@ -132,7 +52,7 @@
     <header>
         <nav class="navbar">
 
-            <a href="index.html" class="logo">Discover Oman</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="index.html" class="logo" style="position: relative; top: 7px;">Discover Oman</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
       
       <div class="navbarspace">
@@ -147,27 +67,31 @@
       </nav>
 
     <section class="booking-section">
-        <form class="booking-form" action="#" method="POST">
-            <h2>Book a Trip</h2>
+        <form class="booking-form">
+            <h2 style="text-align: center;
+                        margin-bottom: 28px;
+                         font-size: 26px;
+                        color: #2c3e50;
+                        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serifh;">Book a Trip</h2>
 
             <label for="name">Full Name</label>
-            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            <input type="text" name="name" placeholder="Enter your full name" required>
 
-            <label for="dob">Date of Birth</label>
-            <input type="date" id="dob" name="dob" required>
+            <label >Date of Birth</label>
+            <input type="date" name="dob" required>
 
             <label for="destination">Where are you planning to go?</label>
             <select id="destination" name="destination" required>
-                <option value="" disabled selected>Select a destination</option>
-                <option value="city1">City One</option>
-                <option value="city2">City Two</option>
+                <option value="city3">Salalah</option>
+                <option value="city2">Muscat City</option>
+                <option value="city1">Sohar City</option>
             </select>
 
             <label for="mobile">Mobile Number</label>
-            <input type="tel" id="mobile" name="mobile" placeholder="e.g. +968 1234 5678" required>
+            <input type="number" name="mobile" placeholder="e.g. +968 1234 5678" required>
 
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <input type="email" name="email" placeholder="Enter your email" required>
 
             <button type="submit">Submit</button>
         </form>
@@ -232,7 +156,7 @@
         <hr style="width: 80%; margin: 0 auto; border: none; height: 2px; background-color: #fff;">
 
     
-            <p style="  text-align: center; padding-top: 20px;color: #999;font-size: 14px;">
+            <p style="  text-align: center; padding-top: 20px;color: #fff;font-size: 14px;">
                 &copy; 2026 Discover Oman. All rights reserved.</p>
 
 

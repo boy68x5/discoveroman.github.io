@@ -1,5 +1,5 @@
 .footer {
-  background-color: #1a1a1a;
+  background-color: #2980b9;
   color: #fff;
   padding: 40px 20px 20px;
   font-family: Arial, sans-serif;
@@ -22,7 +22,7 @@
 .footer-section p {
   line-height: 1.6;
   margin: 8px 0;
-  color: #ccc;
+  color: #fff;
   font-size: 14px;
 }
 
@@ -37,9 +37,9 @@
 }
 
 .footer-section ul li a {
-  color: #ccc;
+  color: #fff;
   text-decoration: none;
-  transition: color 0.3s;
+
 }
 
 .footer-section ul li a:hover {
