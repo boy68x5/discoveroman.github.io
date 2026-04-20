@@ -1,6 +1,6 @@
 
 .navbar {
-    background: #2980b9;
+    background: #FF9E00;
     font-family: boldnose, sans-serif;
       padding-right: 15px;
       padding-left: 15px;
@@ -12,7 +12,7 @@
 .navbarspace { 
      display: flex;
              display: inline-block;
-			color: #fff;
+			color: #FFF;
              font-size: 18px;
               font-weight: bold;
                margin-right: 25px;
@@ -21,7 +21,7 @@
 .logo {
 font-size: 35px;
  font-weight: 600;
-  color: #fff;
+  color: #FFF;
   padding: 10px;
   
 }
@@ -36,7 +36,7 @@ font-size: 35px;
     transition: 0.5s; /* this is the speed of the transition for the hover effect*/
 }
 .navbarspace a:hover {
-    color: #ffffff;
+    color: #1A1A2E;
     font-size: 120%;
 }
 
@@ -44,6 +44,6 @@ font-size: 35px;
     transition: 0.5s;
 }
 .logo:hover {
-    color: #ffffff;
+    color: #1A1A2E;
     font-size: 250%;
 }

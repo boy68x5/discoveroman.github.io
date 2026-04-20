@@ -60,11 +60,11 @@
       font-size: 20px;
 }
 
-.table-box td img {
+.table-box img {
       width: 100%;
       height: auto;
       display: block;
-      max-height: 140px;
+      max-height: 128px;
       object-fit: cover;
 }
 
