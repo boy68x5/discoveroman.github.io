@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+
+
+
+
+
+-->
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Oman</title>
+    <link rel="stylesheet" href="CSS/nav.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+    <link rel="icon" type="image/png" href="Images/logo1-removebg-preview.png">
+    <link rel="stylesheet" href="CSS/exchange.css">
+
+     <!-- Fonts  -->
+     
+    <link href="https://fonts.googleapis.com/css2?family=Boldonse&display=swap" rel="stylesheet">
+
+    <!-- Fonts -->
+
+    <style>
+        * {text-decoration: none;
+        color:inherit;
+        }
+        img {
+            display: block;
+            background-size: cover;
+            width:100%;
+             height:400px;
+            object-fit:cover;
+        }
+        body {
+                 margin: 0;
+                padding: 0; 
+                background-image: url(Images/flag.jpg) ;
+            }
+
+
+    </style>
+     <script src="js/exchanger-tool.js">
+    </script>
+
+
+</head>
+
+<body onload="warning()">
+
+    <script>
+        function warning(){
+            alert("Note: The exchange rates used here are fixed and may change in reality.")
+        };
+    </script>
+    <header>
+        <nav class="navbar">
+
+            <a href="index.html" class="logo" style="position: relative; top: 7px; ">Discover Oman</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+      
+      <div class="navbarspace" style="position: relative; top: 4.5px;">
+        <a href="culture.html">Culture</a>
+        <a href="tourism.html">Tourism</a>
+        <a href="book-a-trip.html">Book a Trip</a>
+        <a href="currency-exchanger.html">Currency Exchanger</a>
+         
+        <a href="about-us.html">About us</a>
+
+      </div>
+      </nav>
+
+      <section class="exchanger-section">
+      <form class="exchanger-form" name="form">
+    <label>Select Currency:</label>
+    <select name="cur">
+      <option value="USD">USD</option>
+      <option value="EUR">Euro</option>
+    </select>
+    
+    <br><br>
+    
+    <label>Enter Amount:</label>
+    <input type="number" name="amo" placeholder="Enter value">
+    
+    <br><br>
+    
+    <button type="button" onclick="exchange()">Exchange</button>
+  </form>
+  </section>
+  
+
+
+
+
+
+
+
+
+<footer class="footer">
+<div class="footer-container">
+               <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Discover Oman is your gateway to exploring the stunning landscapes, rich culture, and warm hospitality of the Sultanate of Oman.</p>
+                </div>
+
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+        <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="tourism.html">Tourism</a></li>
+                    <li><a href="culture.html">Culture</a></li>
+                    <li><a href="book-a-trip.html">Book a Trip</a></li>
+        </ul>
+     </div>
+
+            <div class="footer-section">
+                <h3>Contact</h3> <br>
+                <a href="mailto:info@discoveroman.com">Email: info@discoveroman.com</a><br><br>
+                <a href="tel:+96877220020">Phone: +968 7722 0020</a><br><br>
+                <a href="https://maps.app.goo.gl/BrsVuHqrxA2zbpXL9" target="_blank">Location: Muscat, Oman</a>
+            </div>
+
+            
+
+        </div>
+        <hr style="width: 80%; margin: 0 auto; border: none; height: 2px; background-color: #fff;">
+
+    
+            <p style="  text-align: center; padding-top: 20px;color: #999;font-size: 14px;">
+                &copy; 2026 Discover Oman. All rights reserved.</p>
+
+
+    </footer>
+
+</body>
+
+</html>
